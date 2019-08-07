@@ -1,7 +1,13 @@
 class Notes
-  def add(arg1, arg2)
+  def initialize
+    @notes = Hash.new
+  end
+
+  def add(title, body)
+    @notes[title] = body
   end
 
   def titles
+    @notes.keys
   end
 end
