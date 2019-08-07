@@ -10,4 +10,8 @@ class Notes
   def titles
     @notes.keys
   end
+
+  def view(title)
+    @notes.select { |k, v| k == title }
+  end
 end
